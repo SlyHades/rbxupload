@@ -127,7 +127,7 @@ func main() {
 	base := path.Base(opts.File)
 	params := url.Values{
 		"assetid":       {strconv.FormatUint(uint64(opts.Asset), 10)},
-		"type":          {opts.Type},
+		"type":          {"Mesh"},
 		"name":          {base[:len(base)-len(path.Ext(base))]},
 		"description":   {""},
 		"genreTypeId":   {"1"},
